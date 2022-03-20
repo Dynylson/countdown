@@ -173,3 +173,35 @@ h1 {
   font-size: 18px;
   cursor: pointer;
 }
+
+@media (max-width: 1050px) {
+  img {
+    display: none;
+  }
+  .countdown-container {
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .countdown-container {
+    height: 100vh;
+  }
+  .countdown-itens-flex {
+    flex-direction: column;
+  }
+  .countdown-itens:nth-child(-n + 3) .time::after {
+    content: "";
+  }
+  h1 {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .inscrever p {
+    margin-left: 20px;
+  }
+}
